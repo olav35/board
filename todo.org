@@ -1,0 +1,13 @@
+* TODO Implement "you found the lock, now find the key feature"
+The key shall be stored as a cookie and if not such cookie is found on the machine the "you found the lock" screen is showed regardless of route.
+
+The key must be supplied to interact with the API.
+* TODO Implement post viewing
+* TODO Implement post creating
+* TODO Implement routes
+* TODO Add styling
+* TODO Deploy to Heroku
+* TODO Add post numbers
+* TODO Add quoting / greentexting
+* TODO Add anonymized rss feeds.
+That is feeds that show when there is a new post and a link to it without any other info about the post. Perhaps a email feed would be better suited, but that is hard to make.
