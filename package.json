@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/olav35/board/issues"
   },
-  "homepage": "https://github.com/olav35/board#readme"
+  "homepage": "https://github.com/olav35/board#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
