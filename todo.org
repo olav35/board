@@ -3,7 +3,7 @@
 
   The key must be supplied to interact with the API.
 - [X] Add Cypress tests
-- [ ] Add template .env files
+- [X] Add example .env files
 - [ ] Implement post viewing
 - [ ] Implement post creating
 - [ ] Implement React routing
