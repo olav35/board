@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const key = process.env.KEY || 'devkey'
-const port = process.env.PORT || 3001
+const key = process.env.KEY
+const port = process.env.PORT
 
 app.use(express.json())
 
