@@ -8,7 +8,6 @@ const Header = () => (
     <div id="thread-starter">
       [<button>Start a New Thread</button>]
     </div>
-    <hr/>
   </div>
 )
 

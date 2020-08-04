@@ -16,7 +16,7 @@ router.get('/', (_request, response) => {
   }
   const thread4 = {
     title: 'some more dummy data',
-    body: 'dummmmmmieee'
+    body: 'dummmmmmieee\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n dolor sit amet'
   }
   const dummyThreads = [thread1, thread2, thread3, thread4]
   response.json(dummyThreads)
