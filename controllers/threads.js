@@ -10,7 +10,15 @@ router.get('/', (_request, response) => {
     title: 'This board sucks',
     body: 'I really hate this board'
   }
-  const dummyThreads = [thread1, thread2]
+  const thread3 = {
+    title: 'This board is alright',
+    body: 'I think it is just ok'
+  }
+  const thread4 = {
+    title: 'some more dummy data',
+    body: 'dummmmmmieee'
+  }
+  const dummyThreads = [thread1, thread2, thread3, thread4]
   response.json(dummyThreads)
 })
 
