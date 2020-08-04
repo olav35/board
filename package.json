@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "env $(cat .env | grep -v \"#\" | xargs) nodemon server.js"
+    "dev": "env $(cat .env | grep -v \"#\" | xargs) nodemon server.js",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "cypress": "^4.12.0",
     "nodemon": "^2.0.4"
   }
 }
