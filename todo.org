@@ -2,6 +2,7 @@
   The key shall be stored as a cookie and if no such cookie is found on the machine the "you found the lock" screen is showed regardless of route.
 
   The key must be supplied to interact with the API.
+- [ ] Add Cypress tests
 - [ ] Implement post viewing
 - [ ] Implement post creating
 - [ ] Implement routes
