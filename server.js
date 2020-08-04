@@ -1,11 +1,25 @@
 const express = require('express')
 const app = express()
-
-app.get('/', (_request, response) => {
-  response.send('Hello, world!')
-})
-
+const key = process.env.KEY || 'devkey'
 const port = process.env.PORT || 3001
+
+app.use(express.json())
+
+const invalidKeyHandler = (request, response, next) => {
+  if(request.headers.key === key){
+    next()
+  } else {
+    response.status(403)
+    response.json({
+      error: 'Invalid key'
+    })
+  }
+}
+app.use(invalidKeyHandler)
+
+const threadsRouter = require('./controllers/threads')
+app.use('/api/threads', threadsRouter)
+
 app.listen(port, () => {
   console.log(`Server listening on ${port}`)
 })

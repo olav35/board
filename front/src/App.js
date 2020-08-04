@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import './App.css'
+import KeyPrompt from './components/KeyPrompt'
+import Threads from './components/Threads'
+import threadService from './services/threads'
 
-function App() {
+const App = () => {
+  const [newKey, setNewKey] = useState('')
+  const [threads, setThreads] = useState(null)
+  const [key, setKey] = useState(null)
+
+  useEffect(() => {
+    if(key === null){
+      return
+    }
+    const fetchThreads = async () => {
+      const threads = await threadService.getAll(key)
+      setThreads(threads)
+    }
+    fetchThreads()
+  }, [key])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    threads
+      ? <Threads threads={threads} />
+      : <KeyPrompt newKey={newKey} setNewKey={setNewKey} setKey={setKey} />
+  )
 }
 
 export default App;
