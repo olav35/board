@@ -4,6 +4,7 @@
   The key must be supplied to interact with the API.
 - [X] Add Cypress tests
 - [X] Add example .env files
+- [ ] Setup linting
 - [ ] Implement post viewing
 - [ ] Implement post creating
 - [ ] Implement React routing
