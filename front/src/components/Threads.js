@@ -1,9 +1,16 @@
 import React from 'react'
 
+const Thread = ({thread}) => (
+  <div>
+    <h3>{thread.title}</h3>
+    <p>{thread.body}</p>
+  </div>
+)
+
 const Threads = ({threads}) => (
   <div>
     {
-      threads.map((_, index) => <p key={index}>dummy thread</p>)
+      threads.map((thread, index) => <Thread key={index} thread={thread}/>)
     }
   </div>
 )
