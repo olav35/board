@@ -3,9 +3,10 @@
 
   The key must be supplied to interact with the API.
 - [X] Add Cypress tests
+- [ ] Add template .env files
 - [ ] Implement post viewing
 - [ ] Implement post creating
-- [ ] Implement routes
+- [ ] Implement React routing
 - [ ] Add styling
 - [ ] Deploy to Heroku
 - [ ] Add post numbers
