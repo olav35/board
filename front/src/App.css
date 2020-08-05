@@ -79,3 +79,12 @@ h1, h2, h3, h4, h5, h6 {
 #thread-starter > button:hover {
   color: #de0000;
 }
+
+#thread-form > textarea {
+  width: 500px;
+  height: 300px;
+}
+
+#thread-form > input {
+  width: 200px;
+}
