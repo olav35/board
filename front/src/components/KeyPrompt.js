@@ -9,12 +9,10 @@ const KeyPrompt = ({ newKey, setNewKey, setKey }) => {
 
   return (
     <div id="key-prompt">
-      <div id="key-prompt-inner">
-        <h2>You found the lock, now find the key</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" value={newKey} onChange={(event) => setNewKey(event.target.value)}/>
-        </form>
-      </div>
+      <h2>You found the lock, now find the key</h2>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={newKey} onChange={(event) => setNewKey(event.target.value)}/>
+      </form>
     </div>
   )
 }
