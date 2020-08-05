@@ -15,6 +15,11 @@
 - [ ] Add anonymized rss feeds.
   That is feeds that show when there is a new post and a link to it without any other info about the post. Perhaps a email feed would be better suited, but that is hard to make.
 - [ ] voice chat
+
   This one is kind of far fetched, but using WebRTC along with something like PeerJS I could add an anonymous voice / videochat feature into my app.
 
   I believe this would leak the IPs of the voice chat participants, but that is okay if I add a disclaimer.
+- [ ] Add banners
+- [ ] Add stickies
+- [ ] Add recent commits overview
+  I could fetch the recent commits from the GitHub repository and display them under the start-a-new-thread-button as a news feed of sorts
